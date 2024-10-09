@@ -1,0 +1,24 @@
+https://enzomind.com/files/uwm/wyklady/ProjAppWeb/lab1.pdf
+
+podstrony:
+https://how2html.pl/wewnetrzne-linki-html-podstrony/
+
+link do githuba na maila wysylac maila z imieniem i nazwiskiem i tytul maila
+
+artur.samojluk@uwm.edu.pl
+
+ProjAppWeb/lab1 tytul
+
+
+
+
+<form>
+Imię:<br>
+<input type="text" name="imie"><br>
+Nazwisko:<br>
+<input type="text" name="nazwisko"><br>
+Email:<br>
+<input type="text" name="nazwisko"><br>
+</form>
+</body>
+
