@@ -40,8 +40,8 @@ function showtime()
 function toggleClock() {
     var zegarek = document.getElementById("zegarek");
     if (zegarek.style.display === "none") {
-        zegarek.style.display = "block"; // Pokazuje zegar
+        zegarek.style.display = "block"; 
     } else {
-        zegarek.style.display = "none"; // Ukrywa zegar
+        zegarek.style.display = "none"; 
     }
 }
