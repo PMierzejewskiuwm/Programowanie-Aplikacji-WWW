@@ -1,0 +1,141 @@
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="pl" />
+<meta name="Author" content="Patryk Mierzejewski" />
+<title>Największe budynki świata</title>
+<script src="timedate.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+p
+{
+   
+        text-align: center;
+        text-indent: 20px;   
+   
+}
+table,tr,td
+{
+border: 1px solid black;
+}
+.myDiv
+{
+
+        border: 5px outset rgb(145, 255, 0);
+        background-color: lightblue;
+        text-align: center;
+
+}
+.myDiv2
+{
+        text-align: left;
+        font-size: x-large;
+}
+body 
+{
+        margin: 0;
+        padding: 0;
+        height: 300vh; 
+        background-image: url('tło.png'); 
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+}
+</style>
+</head>
+
+<body onload = "startclock()">
+        
+<header>
+        <h1>Strona poświęcona największym budynkom świata</h1>
+        
+</header>
+
+
+
+<div class="myDiv">
+<table cellspacing="10">
+<tr style="background-color: brown;">
+<td><a href="#">Strona Główna</a></td>
+</tr>
+<tr style="background-color: aquamarine;">
+<td><a href="podstrona1/pierwsza.html">Zjednoczone Emiraty Arabskie</a></td>
+<td><a href="podstrona2/druga.html">Chiny</a></td>
+<td><a href="podstrona3/trzecia.html">Malezja</a></td>
+<td><a href="podstrona4/czwarta.html">Stany Zjednoczone</a></td>
+<td><a href="podstrona5/piata.html">Singapur</a></td>
+<td><a href="podstrona6/szosta.html">experimental</a></td>
+</tr>
+<tr style="background-color: crimson;">
+<td><a href="kontakt/kontakt.html">Kontakt</a></td>
+</tr>
+</table>
+</div>
+
+<div class="myDiv2">
+        
+        Data: M / D / Y<div id="data"></div>
+        Godzina: <div id="zegarek"></div>
+        <button onclick="toggleClock()">Ukryj/Pokaż Zegar</button>
+</div>
+
+<p>
+        <b><span style="font-size: xx-large">Największe budynki świata</span></b><br>
+        <span style="font-size: large" >Wieżowiec to stosunkowo wysoki nadziemny budynek wolno stojący posiadający <br>
+                fundamenty i dach, w którym przynajmniej 50 procent jego wysokości jest wykorzystana na piętra użytkowe.<br>
+                To kryterium odróżnia drapacze chmur od różnego rodzaju wolno stojących wież telewizyjnych (w których piętra<br>
+                 użytkowe to jedynie galerie widokowe i restauracje) i kominów (pojęcie piętra tu nie występuje).</span>
+</p>
+<p>
+<img src="img0.gif" width="750" height="400"/> <br>
+<i><u><span style="font-size: larger">Najwyższe budynki świata(2020)</span></i></u> <br>
+</p>
+<p>
+        <b><span style="font-size: xx-large">Każda podstrona z menu poświęcona jest kilku budynkom z wybranych krajów świata.</span></b>
+</p>
+
+<script>
+        $("img").hover(
+           function() {
+              $(this).animate({
+                 width: "300px",
+                 opacity: 0.7
+              }, 500);
+           },
+           function() {
+              $(this).animate({
+                 width: "750px",
+                 opacity: 1
+              }, 500);
+           }
+        );
+</script>
+
+<script>
+        $("h1").on("click", function() {
+           $(this).animate({
+              fontSize: "3em"
+           }, 1000).animate({
+              fontSize: "2em"
+           }, 1000);
+        });
+</script>
+
+<script>
+        $("tr").hover(
+           function() {
+              var originalColor = $(this).css("background-color");
+              $(this).data("originalColor", originalColor); 
+              $(this).css("background-color", "lightgreen"); 
+           },
+           function() {
+              var originalColor = $(this).data("originalColor");
+              $(this).css("background-color", originalColor);
+           }
+        );
+ </script>
+
+
+
+
+</body>

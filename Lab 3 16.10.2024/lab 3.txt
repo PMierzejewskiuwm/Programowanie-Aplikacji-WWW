@@ -1,0 +1,15 @@
+https://enzomind.com/files/uwm/wyklady/ProjAppWeb/lab3.pdf
+
+podstrony:
+https://how2html.pl/wewnetrzne-linki-html-podstrony/
+
+link do githuba na maila wysylac maila z imieniem i nazwiskiem i tytul maila
+
+artur.samojluk@uwm.edu.pl
+
+ProjAppWeb/lab1 tytul
+
+
+wstawienie kilka razy <br> można zastąpić:
+<div style="height: 40px;"></div> (wstawienie pustego bloku o podanym rozmiarze)
+
