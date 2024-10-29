@@ -1,20 +1,20 @@
 <?php
-session_start(); // Rozpoczęcie sesji
+session_start(); 
 
-// Przykład $_GET
+
 if (isset($_GET['imie'])) {
     echo "Witaj, " . htmlspecialchars($_GET['imie']) . "!<br />";
 } else {
     echo "Wpisz swoje imię w URL np. ?imie=Patryk<br />";
 }
 
-// Przykład $_POST
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['nazwisko'])) {
     $nazwisko = htmlspecialchars($_POST['nazwisko']);
     echo "Nazwisko z POST: $nazwisko <br />";
 }
 
-// Przykład $_SESSION
+
 if (!isset($_SESSION['odwiedziny'])) {
     $_SESSION['odwiedziny'] = 1;
     echo "Witaj pierwszy raz na stronie!<br />";
