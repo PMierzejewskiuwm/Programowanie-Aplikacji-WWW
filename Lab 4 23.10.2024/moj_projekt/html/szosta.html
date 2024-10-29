@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>moja strona www</title>
+    <script src="../js/kolorujtlo.js" type="text/javascript"></script>
+    <script src="../js/timedate.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href = "../css/style.css"/>
+</head>
+<style>
+#colorPicker 
+{
+        display: none;
+}
+.myDiv2
+{
+        text-align: left;
+        font-size: x-large;
+}
+</style>
+
+<body onload = "startclock()">
+
+    <a href="../StronaGlowna.html">Strona Główna</a>
+
+    <b><i>Zmień kolor strony:</i></b>
+
+<button onclick="toggleColorPicker()">Wybierz kolor strony</button>
+<select id="colorPicker" onchange="changeBackground(this.value)">
+        <option value="">-- Wybierz kolor --</option>
+        <option value="#FFFFFF">Biały</option>
+        <option value="#FF0000">Czerwony</option>
+        <option value="#00FF00">Zielony</option>
+        <option value="#0000FF">Niebieski</option>
+        <option value="#FFFF00">Żółty</option>
+        <option value="#FFA500">Pomarańczowy</option>
+        <option value="#000000">Czarny</option>
+    </select>
+
+    <div class="myDiv2">
+        
+        Data: M / D / Y<div id="data"></div>
+        Godzina: <div id="zegarek"></div>
+        <button onclick="toggleClock()">Ukryj/Pokaż Zegar</button>
+</div>
+
+<div id ="animacjaTestowa1" class="test-block">Kliknij, a się powiększe</div>
+<script>
+
+    $("#animacjaTestowa1").on("click", function(){
+        $(this).animate({
+            width: "500px",
+            opacity: 0.6,
+            fontsize: "3em",
+            borderwidth: "10px"
+        }, 1500);
+    });
+</script>
+
+<div id ="animacjaTestowa2" class="test-block">Najedź kursorem, a się powiększę</div>
+
+<script>
+    $("#animacjaTestowa2").on({
+        "mouseover" : function(){
+            $(this).animate({
+                width: 300
+                 
+            }, 800);
+        },
+        "mouseout" : function() {
+            $(this).animate({
+                width: 200
+                
+            }, 800);
+        } 
+    });
+</script>
+
+<div id="animacjaTestowa3" class="test-block">Kliknij, abym urósł</div>
+<script>
+    $("#animacjaTestowa3").on("click", function(){
+        if(!$(this).is(":animated")){
+            $(this).animate({
+                width: "+=" + 50,
+                height: "+=" + 10,
+                opacity: "-=" + 0.1,
+                duration: 3000 //inny sposób deklaracji czasu trwania animacji
+            });
+        }
+    });
+</script>
+
+</body>
+</html>
