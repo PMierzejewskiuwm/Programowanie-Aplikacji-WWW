@@ -1,0 +1,39 @@
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom, #f5f5f5, #ffffff);
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    float: left; /* Dodanie tej właściwości sprawi, że tekst będzie otaczał obrazek */
+    margin-right: 15px; /* Odstęp między obrazkiem a tekstem */
+    margin-bottom: 10px; /* Odstęp od tekstu poniżej obrazka */
+}
+
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+b {
+    color: #2c3e50;
+    font-size: 1.2rem;
+}
+
+u {
+    color: #8e44ad;
+}
+
+i {
+    font-style: italic;
+}
